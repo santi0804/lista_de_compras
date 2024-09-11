@@ -10,7 +10,7 @@ while True:
 
     opcion = input("Selecciona una opción (1-4): ")
 
-    if opcion = '1':   # Agregar artículo
+    if opcion == '1':   # Agregar artículo
             articulo = input("Nombre del articulo: ") 
             lista_compras.append(articulo)
             print(f"'{articulo}' agregado a la lista.")
@@ -33,7 +33,8 @@ while True:
 
     elif opcion == '4':  #Salir del programa
          print("!Gracias por utilizar la lista de comprar! vuelve pronto putito.")
-         break.
+         break
+
     else:
          print("Opción no valida, elige una opción entre 1 y 4.")
 
