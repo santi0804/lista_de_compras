@@ -1,18 +1,18 @@
 
 lista_compras = []  # Inicia lista vacia
 
-while True:
+while True:   # Aqui el bucle
     print("\nMenú principal:")
     print("1. Agregar artículo")
-    print("2. Mostrar Lista")
-    print("3. Eliminar artículo")
+    print("2. ELiminar Articulo")
+    print("3. Mostrar Lista")
     print("4. Salir")
 
     opcion = input("Selecciona una opción (1-4): ")
 
     if opcion == '1':   # Agregar artículo
-            articulo = input("Nombre del articulo: ") 
-            lista_compras.append(articulo)
+            articulo = input("Nombre del articulo: ")   
+            lista_compras.append(articulo)                  # Método Append se utiliza para agregar
             print(f"'{articulo}' agregado a la lista.")
 
     elif opcion == '2':  
@@ -24,8 +24,8 @@ while True:
             
             try:
                 indice = int(input("Ingrese número del articulo a eliminar: ")) -1
-                if 0 <= indice < len(lista_compras):
-                     eliminado = lista_compras.pop(indice)
+                if 0 <= indice < len(lista_compras):            # El formato indice nos muestra la lista
+                     eliminado = lista_compras.pop(indice)    # Método pop se utiliza para eliminar
                      print(f"\ '{eliminado}' ha sido eliminado.")
                 else:
                     print("indice invalido.")
@@ -45,7 +45,7 @@ while True:
 
 
     elif opcion == '4':  #Salir del programa
-         print("!Gracias por utilizar la lista de comprar! vuelve pronto putito.")
+         print("!Gracias por utilizar la lista de comprar! vuelve pronto Putito.")
          break
 
     else:
