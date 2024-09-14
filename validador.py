@@ -1,4 +1,4 @@
-# validador.py
+
 
 def validar_contraseña(contraseña):
 
